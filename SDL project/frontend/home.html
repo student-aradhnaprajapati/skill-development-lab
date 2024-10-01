@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- add css file -->
+     <link rel = "stylesheet" href = "style.css">
+
+</head>
+<body>
+<header class=" header">
+    
+    <section class = "flex">
+
+        <div id="menu-btn" class="fas fa-bars-staggered"></div>
+        <a href = "home.html" class = "logo"><i class = "fas fa-bars-staggered"></i>jobs.</a>
+        <nav class = "navbar">
+            <a href = "home.html">Home</a>
+            <a href = "about.html">About</a>
+            <a href = "job.html">Jobs</a>
+            <a href = "contact.html">Contact</a>
+            <a href = "login.html">login</a>
+        </nav>
+
+        <!-- create button -->
+         <a href = "#" class=" btn" style ="margin-top: 0;">login</a>
+    </section>
+
+</header>
+
+
+<!-- home section create -->
+ <div class="home-container">
+    <section class="home">
+        <form action="" method="post">
+            <h3>find my job</h3>
+            <p>job title <span>*</span></p>
+            <input type="text" name="title"  placeholder="keyword, category or company" required maxlength="20" class="input">
+            <p>job loction</p>
+            <input type="text" name="location"  placeholder="city, state or country" required maxlength="50" class="input">
+            <input type="submit" value="search job" name="search"class="btn">
+        </form>
+    </section>
+ </div>
+
+ <!--category page create  -->
+<!-- start -->
+<div class="section-title">Job category</div>
+<div class="job-container">
+ <section class="category">
+    <h1 class="heading">job fields</h1>
+    <div class="box-container">
+        <a href="#" class="box">
+            <i class="fas fa-balance-scale"></i>
+            <div>
+              <h3>Law Enforcement</h3>
+            </div>
+          </a>
+
+        <a href="#" class="box">
+            <i class="fas fa-code"></i>
+            <div>
+                <h3>civil</h3>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <i class="fas fa-hospital"></i>
+            <div>
+              <h3>Healthcare</h3>
+            </div>
+          </a>
+
+          <a href="#" class="box">
+            <i class="fas fa-graduation-cap"></i>
+            <div>
+              <h3>Education</h3>
+            </div>
+          </a>
+
+          <a href="#" class="box">
+            <i class="fas fa-laptop"></i>
+            <div>
+              <h3>IT</h3>
+            </div>
+          </a>
+
+          <a href="#" class="box">
+            <i class="fas fa-university"></i>
+            <div>
+              <h3>Administration</h3>
+            </div>
+          </a>
+
+          <a href="#" class="box">
+            <i class="fas fa-road"></i>
+            <div>
+              <h3>Transportation</h3>
+            </div>
+          </a>
+      
+    </div>
+ </section>
+</div>
+<!-- end  -->
+
+ <!-- about page -->
+  <!-- start -->
+   <div class="section-title">about us</div>
+  <section class = "about">
+
+    <div class="box">
+      <h3>why are you here???</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure laboriosam adipisci veritatis hic harum doloremque quisquam et pariatur. Eveniet distinctio hic aspernatur omnis odio adipisci beatae tenetur maiores nulla eaque.
+      </p>
+      <br>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ducimus dolorum velit? Nemo ad, odio possimus assumenda facere sapiente et.</p>
+      <a href="contact.html" class="btn">contact with us</a>
+    </div>
+  </section>
+   <!-- end -->
+ <!-- job page -->
+  <!-- start -->
+  <section class="jobs-container">
+    <h1 class="heading">latest job</h1>
+    <div class="box-container">
+        <div class="box">
+            <div class="company">
+                <img src="" alt="">
+                <div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <!-- end -->
+
+  <!-- job section -->
+   <!-- start -->
+    <section class="jobs-container">
+      <h1 class="heading">latest jobs</h1>
+      <div class="box-container">
+        <div class="box">
+          <div class="company">
+            <!-- image link -->
+             <!-- <img src="" alt=""> -->
+              <div>
+                <h3>xyz</h3>
+                <span>123</span>
+              </div>
+          </div>
+          <h3 class="job-title">ewre</h3>
+          ,<p class=""></p>
+        </div>
+      </div>
+    </section>
+
+<!-- end -->
+<!-- contact start -->
+<div class="section-title">contact</div>
+<section class="contact">
+<div class="box-container">
+ <div class="box">
+   <i class="fas fa-map-marker-alt"></i>
+   <a href="#">x---y----z</a>
+ </div>
+
+ <div class="box"></div>
+   <i class="fas fa-envelop"></i>
+   <a href="mail to: abc@gmail.com">abc@gmail.com</a>
+ </div>
+
+ <div class="box">
+   <i class="fas fa-phone"></i>
+   <a href="tel:1234567890" >--xxxxxxxxxxx--</a>
+ </div>
+</div>
+<form action="" method="post">
+  <h3>drop you massage</h3>
+ <div class="flex">
+   <div class="box">
+     <p>name <span>*</span></p>
+     <input type="text" name="name" required maxlength="20" placeholder="enter your name" class="input">
+   </div>
+   <div class="box"></div>
+     <p>email <span>*</span></p>
+     <input type="email" name="email" required maxlength="50" placeholder="enter your email" class="input">
+   </div>
+   <div class="box"></div>
+     <p>number <span>*</span></p>
+     <input type="number" name="name" required min="0" placeholder="enter your number" class="input">
+   </div>
+   <div class="box"></div>
+     <p>role <span>*</span></p>
+      <select name="role" required class="input">
+       <option value="employee">employes</option>
+       <option value="student">student</option>
+       <option value="freaher">fresher</option>
+      </select>
+   </div>
+ </div>
+ <p>message <span>*</span></p>
+ <textarea name="message" class="input" required maxlength="1000" placeholder="enter your massage" rows="10" cols="20"></textarea>
+ <input type="submit" value="send message" name="send" class="btn">
+</form>
+</section>
+<!-- contact section end -->
+
+<footer class="footer">
+    <section class="grid">
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="home.html"><i class="fas fa-angle-right"></i>home</a>
+            <a href="about.html"><i class="fas fa-angle-right"></i>about</a>
+            <a href="job.html"><i class="fas fa-angle-right"></i>jobs</a>
+            <a href="contact.html"><i class="fas fa-angle-right"></i>contact</a>
+            <a href="#"><i class="fas fa-angle-right"></i>filter search</a>
+        </div>
+
+        <div class="box">
+            <h3>extra link</h3>
+            <a href="#"><i class="fas fa-angle-right"></i>account</a>
+            <a href="login.html"><i class="fas fa-angle-right"></i>login </a>
+            <a href="register.html"><i class="fas fa-angle-right"></i>register </a>
+            <a href="#"><i class="fas fa-angle-right"></i>post job</a>
+            <a href="#"><i class="fas fa-angle-right"></i>deahboard</a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
+            <a href="#"><i class="fab fa-twitter"></i>twitter</a>
+            <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+            <a href="#"><i class="fab fa-linkedin"></i>linkedin</a>
+            <a href="#"><i class="fab fa-youtube"></i>youtube</a>
+        </div>
+    </section>
+</footer>
+
+    <!--add javascript file   -->
+    <script src = "javascript.js"></script>
+</body>
+</html>
