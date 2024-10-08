@@ -1,0 +1,98 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <title>PSU Govt Jobs</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #f4f4f4;
+          margin: 10;
+          padding: 30px;
+        }
+  
+        h1 {
+          color: #080807;
+          font-size: 3rem;
+          text-align: center;
+          text-transform: capitalize;
+        }
+        
+        .header{
+            position: sticky;
+            top:0; left:0; right: 0;
+            background-color: greenyellow;
+            box-shadow: var(--box-shadow);
+            z-index: 1000;
+        }
+        
+        table {
+          width: 100%;
+          border-collapse: collapse;
+          margin-top: 20px;
+        }
+  
+        th, td {
+          border: 1px solid #ddd;
+          padding: 8px;
+          text-align: left;
+        }
+  
+        th {
+          background-color: #4CAF50;
+          color: white;
+        }
+  
+        tr:nth-child(even) {
+          background-color: #f2f2f2;
+        }
+  
+        tr:hover {
+          background-color: #ddd;
+        }
+  
+        a {
+          text-decoration: none;
+          color: white;
+          background-color: #4CAF50;
+          padding: 5px 10px;
+          border-radius: 5px;
+        }
+  
+        a:hover {
+          background-color: #45a049;
+        }
+      </style>
+  
+  </head>
+  <body>
+    <h1>PSU Govt Jobs</h1>
+    <p>
+      PSU (Public Sector Undertaking) jobs are a great opportunity for those who
+      want to work in the government sector. PSU jobs are available in various
+      fields such as engineering, management, finance, and more. PSU jobs offer
+      a stable career, good salary, and benefits.
+    </p>
+    <p>Here are some of the benefits of PSU jobs:</p>
+    <table>
+      <tr>
+        <th>Post Name</th>
+        <th>Total Vacancies</th>
+        <th>Closing Date</th>
+        <th>Details</th>
+        <th>Apply Link</th>
+      </tr>
+      {% for job in jobs %}
+      <tr>
+        <td>{{ job['Post Name'] }}</td>
+        <td>{{ job['Total Vacancies'] }}</td>
+        <td>{{ job['Closing Date'] }}</td>
+        <td>{{ job['Details'] }}</td>
+        <td><a href="{{ job['Apply Link'] }}">Apply</a></td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
+
+
+ 
